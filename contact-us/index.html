@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Latinity - Contact Us</title>
+    <link rel="stylesheet" href="../assets/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/animate.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.1/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+  </head>
+  <body class="pageContacus">
+    <nav id="menu">
+    </nav>
+    <section id="containerContact">
+        <div class="contElements container effect" >
+          <div class="row" style="margin-bottom:0px;">
+            <div class="contMessage">
+              <h1>Contact us</h1>
+              <h4>Leave your message</h4>
+            </div>
+          </div>
+        </div>
+        <div class="container effect">
+          <div class="row">
+            <div class="contDerech col m8">
+              <form class="formContact" action="" method="post">
+                <input type="text" name="name" placeholder="Name">
+                <input type="text" name="email" placeholder="Email">
+                <input type="text" name="message" placeholder="Message">
+                <input class="btnLatinity" type="submit" name="send" value="Send">
+              </form>
+            </div>
+            <div class="col m4 contDatos">
+              <ul class="ulContact">
+                <li><i class="fa fa-map-marker" aria-hidden="true"></i> Pontificia Universidad Javeriana.<br> Carrera 7 No. 40 - 62, Bogotá</li>
+                <li><i class="fa fa-phone" aria-hidden="true"></i> 555 55 55</li>
+                <li><i class="fa fa-envelope-o" aria-hidden="true"></i> <a class="btnA" href="mailto:latinity@latinity.co" target="_blank">latinity@latinity.co</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+    </section>
+    <section id="mapContact" class="effect">
+    </section>
+    <footer id="footer">
+
+    </footer>
+    <div id="bgspace"></div>
+    <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.1/js/materialize.min.js"></script>
+    <script type="text/javascript" src="../assets/js/jquery.smoothState.js"></script>
+    <script type="text/javascript" src="../assets/js/index.js"></script>
+    <script src="../assets/js/viewportchecker.js"></script>
+    <script type="text/javascript">
+    function initMap() {
+          // Styles a map in night mode.
+
+          var myLatlng =  {lat: 4.6284578, lng: -74.0649077};
+
+          var map = new google.maps.Map(document.getElementById('mapContact'), {
+            center: myLatlng,
+            gestureHandling: 'cooperative',
+            zoom: 17,
+            zoomControl: false,
+            scaleControl: false,
+            streetViewControl: false,
+            rotateControl: false,
+            mapTypeControl: false,
+            styles: [
+              {elementType: 'geometry', stylers: [{color: '#353f4b'}]},
+              {elementType: 'labels.text.stroke', stylers: [{color: '#242f3e'}]},
+              {elementType: 'labels.text.fill', stylers: [{color: '#746855'}]},
+            {
+              featureType: 'administrative.locality',
+              elementType: 'labels.text.fill',
+              stylers: [{color:'#ECA400'}]
+            },
+            {
+              featureType: 'poi',
+              elementType: 'labels.text.fill',
+              stylers: [{color:'#ECA400'}]
+            },
+            {
+              featureType: 'poi.medical',
+              stylers: [{visibility: 'off'}]
+            },
+            {
+              featureType: 'transit.station',
+              stylers: [{visibility: 'off'}]
+            },
+            {
+              featureType: 'poi.business',
+              stylers: [{visibility: 'off'}]
+            },
+            {
+              featureType: 'poi.attraction',
+              stylers: [{visibility: 'off'}]
+            },
+            {
+                featureType: 'road',
+                elementType: 'geometry',
+                stylers: [{color: '#25303E'}]
+              },
+              {
+                featureType: 'road',
+                elementType: 'labels.text.fill',
+                stylers: [{color: '#9ca5b3'}]
+              },
+              {
+                featureType: 'road.highway',
+                elementType: 'geometry',
+                stylers: [{color: '#25303E'}]
+              },
+              {
+                featureType: 'road.highway',
+                elementType: 'labels.text.fill',
+                stylers: [{color: '#9ca5b3'}]
+              },
+              {
+                featureType: 'transit',
+                elementType: 'geometry',
+                stylers: [{color: '#EC0B43'}]
+              },
+              {
+                featureType: 'transit.station',
+                elementType: 'labels.text.fill',
+                stylers: [{color: '#9ca5b3'}]
+              },
+
+            ]
+          });
+          var image = 'http://everbrander.co/latinity/assets/img/location2.png';
+          var marker = new google.maps.Marker({
+              position: myLatlng,
+              animation: google.maps.Animation.DROP,
+              map: map,
+              icon: image
+          });
+
+        }
+
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAvYoIaFu05L_nSfj7Pi_rT9N3yHzWhZP0&callback=initMap" async defer></script>
+  </body>
+</html>
