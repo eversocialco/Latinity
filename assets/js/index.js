@@ -13,12 +13,12 @@ $(function() {
 });
 
 function printElements(){
-  $("#menu").load("http://everbrander.co/latinity/templates/header.html", function(){
+  $("#menu").load("../../templates/header.html", function(){
     loadContent();
     particlesJS("bgspaceMenu", optionsMenu);
     $(".button-collapse").sideNav();
   });
-  $("#footer").load("http://everbrander.co/latinity/templates/footer.html", function(){
+  $("#footer").load("../../templates/footer.html", function(){
     loadContent();
   });
 }
@@ -51,4 +51,3 @@ function loadAll(callback){
   loadContent();
   callback();
 }
-  
