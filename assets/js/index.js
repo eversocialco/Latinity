@@ -13,12 +13,12 @@ $(function() {
 });
 
 function printElements(){
-  $("#menu").load("../../templates/header.html", function(){
+  $("#menu").load("https://eversocialco.github.io/Latinity/templates/header.html", function(){
     loadContent();
     particlesJS("bgspaceMenu", optionsMenu);
     $(".button-collapse").sideNav();
   });
-  $("#footer").load("../../latinity/templates/footer.html", function(){
+  $("#footer").load("https://eversocialco.github.io/Latinity/templates/footer.html", function(){
     loadContent();
   });
 }
