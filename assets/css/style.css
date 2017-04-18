@@ -978,7 +978,7 @@ input[type=number]:focus:not([readonly]), input[type=search]:focus:not([readonly
 
 	.cbp_tmtimeline > li .cbp_tmlabel {
 		margin: 0 0 30px 0;
-		padding: 1em;
+		padding: 20px 0;
 		font-weight: 400;
 		font-size: 95%;
 	}
@@ -997,9 +997,162 @@ input[type=number]:focus:not([readonly]), input[type=search]:focus:not([readonly
 	}
 
 	.cbp_tmtimeline > li .cbp_tmicon {
-		position: relative;
+		/*position: relative;
 		float: right;
 		left: auto;
-		margin: -55px 5px 0 0px;
+		margin: -55px 5px 0 0px;*/
+    position: absolute;
+    float: right;
+    right: 0px !important;
+    left: auto;
+    margin: 0;
 	}
+}
+
+@media (max-width: 900px){
+  .rowAbout{
+    flex-wrap: wrap;
+  }
+  .rowAbout .col{
+    width: 100% !important;
+    margin: 10px 0;
+  }
+
+  .contDesWhatIs{
+    padding: 0 20px !important;
+  }
+  #contsponsors .contLogo img{
+    width: 100%;
+  }
+  .cbp_tmtimeline{
+    padding: 0 40px !important;
+  }
+}
+
+@media (max-width: 750px){
+
+  .rowOrganizer{
+    flex-wrap: wrap;
+  }
+  .itemOrganizer{
+    width: 100%;
+    margin: 10px 0;
+  }
+  .cbp_tmtimeline > li .cbp_tmtime small{
+    text-align: left;
+  }
+
+}
+
+@media (max-width: 600px){
+  .rowCta{
+    flex-wrap: wrap;
+    padding: 7px 0;
+  }
+  .rowCta .col{
+    width: 100%;
+    text-align: center;
+    margin: 10px 0;
+  }
+  .rowCta .titleSuscribe{
+    font-size: 32px;
+    text-align: center;
+    margin-top: 0;
+  }
+  .rowCta .btnCta {
+    font-size: 20px;
+  }
+  #contsponsors .contLogos{
+    flex-wrap: wrap;
+  }
+  #contsponsors .contLogo{
+    width: 100%;
+    text-align: center;
+    margin: 10px 0;
+  }
+  #contsponsors .contLogo img{
+    width: 250px;
+  }
+  #footer .row{
+    flex-wrap: wrap;
+  }
+  #footer .row .col{
+    width: 100%;
+    text-align: center;
+  }
+  #footer .contRedesFooter{
+    justify-content: center;
+  }
+  .formSuscribe .inputEmail{
+    max-width: 190px;
+  }
+  #contsponsors h5 span{
+    background-color: transparent;
+  }
+  #contsponsors h5:before{
+    display: none;
+  }
+}
+
+@media (max-width: 520px){
+  .containerMenu{
+    padding: 0 40px;
+  }
+  .contMessage{
+    padding: 0 25px;
+  }
+  .contMessage h1{
+		font-size: 44px;
+	}
+  .contMessage h4{
+		font-size: 26px;
+	}
+  .contDesWhatIs h3{
+    font-size: 27px;
+  }
+  .contMenuSchedule{
+    padding: 0 30px;
+  }
+  .side-nav{
+    width: 70% !important;
+  }
+  .logoMenu {
+    max-width: 100%;
+    padding: 40px 18px 20px;
+  }
+}
+
+@media (max-width: 400px){
+  .thumbnailOrganizer img{
+    width: 110px;
+  }
+  .contImgAbout img {
+    width: 100%;
+    padding: 0 50px;
+  }
+  .cbp_tmtimeline {
+    padding: 0 20px !important;
+  }
+}
+
+@media (max-width: 360px){
+  .contMessage h1{
+    font-size: 31px;
+  }
+  .contMessage h4 {
+    font-size: 22px;
+  }
+  .cbp_tmtimeline > li .cbp_tmicon{
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    font-size: 25px;
+  }
+  .cbp_tmicon img{
+    width: 60px;
+  }
+  #schedule .tabs .tab a {
+    font-size: 14px;
+    padding: 0 5px;
+  }
 }
