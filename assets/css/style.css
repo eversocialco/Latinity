@@ -883,6 +883,13 @@ input[type=number]:focus:not([readonly]), input[type=search]:focus:not([readonly
   margin-top: 35px;
 }
 
+.btnAbout{
+  margin-left:100px;
+}
+
+.contImgPage img{
+  width:100%;
+}
 /*
  * Keyframes
  */
@@ -1041,7 +1048,12 @@ input[type=number]:focus:not([readonly]), input[type=search]:focus:not([readonly
   .cbp_tmtimeline > li .cbp_tmtime small{
     text-align: left;
   }
-
+  .pageContacus .contDerech{
+    padding: 0 40px !important;
+  }
+  #containerContact .contDatos{
+    display: none;
+  }
 }
 
 @media (max-width: 600px){
@@ -1092,6 +1104,25 @@ input[type=number]:focus:not([readonly]), input[type=search]:focus:not([readonly
   #contsponsors h5:before{
     display: none;
   }
+  .divMod{
+    max-width: 80%;
+  }
+  .contElements{
+    padding: 30px 20px;
+  }
+  .contElements .row{
+    margin: 0 !important;
+  }
+  .contElements .contDerInfo, .contElements .contIzqInfo{
+    padding: 0 !important;
+  }
+  .contImgPage{
+    text-align: center;
+    margin-top: 20px;
+  }
+  .contImgPage img{
+    width:80%;
+  }
 }
 
 @media (max-width: 520px){
@@ -1099,7 +1130,7 @@ input[type=number]:focus:not([readonly]), input[type=search]:focus:not([readonly
     padding: 0 40px;
   }
   .contMessage{
-    padding: 0 25px;
+    padding: 0 20px;
   }
   .contMessage h1{
 		font-size: 44px;
@@ -1119,6 +1150,16 @@ input[type=number]:focus:not([readonly]), input[type=search]:focus:not([readonly
   .logoMenu {
     max-width: 100%;
     padding: 40px 18px 20px;
+  }
+  .aboutus .contLinks{
+    flex-wrap: wrap;
+  }
+  .aboutus .contLinks .itemsWhatIs{
+    width: 100%;
+  }
+  .btnAbout{
+    margin-left:0;
+    margin-top: 20px;
   }
 }
 
