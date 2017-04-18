@@ -408,6 +408,8 @@ input[type=number]:focus:not([readonly]), input[type=search]:focus:not([readonly
   display: flex;
   align-items: center;
   padding-top: 4px;
+  z-index: 111;
+  position: relative;
 }
 
 .contRedes .contIcon{
@@ -828,16 +830,6 @@ input[type=number]:focus:not([readonly]), input[type=search]:focus:not([readonly
   width: 100%;
 }
 
-.contTitleGallery{
-  margin-bottom: 60px;
-}
-
-.contTitleGallery h1{
-  color: white;
-  text-transform: uppercase;
-  text-align: center;
-}
-
 .contNew{
   border-bottom: 1px solid rgba(236, 236, 236, 0.3);
   padding-bottom: 70px;
@@ -889,6 +881,13 @@ input[type=number]:focus:not([readonly]), input[type=search]:focus:not([readonly
 
 .contImgPage img{
   width:100%;
+}
+
+.titlePageInt{
+  margin-bottom:60px;
+  color: white;
+  text-transform: uppercase;
+  text-align: center;
 }
 /*
  * Keyframes
@@ -1132,7 +1131,7 @@ input[type=number]:focus:not([readonly]), input[type=search]:focus:not([readonly
   .contMessage{
     padding: 0 20px;
   }
-  .contMessage h1{
+  .contMessage h1, .titlePageInt{
 		font-size: 44px;
 	}
   .contMessage h4{
@@ -1161,6 +1160,12 @@ input[type=number]:focus:not([readonly]), input[type=search]:focus:not([readonly
     margin-left:0;
     margin-top: 20px;
   }
+  .rowGallery{
+    padding: 0 20px;
+  }
+  .contRedes .contIcon i {
+    font-size: 21px;
+  }
 }
 
 @media (max-width: 400px){
@@ -1178,6 +1183,10 @@ input[type=number]:focus:not([readonly]), input[type=search]:focus:not([readonly
 
 @media (max-width: 360px){
   .contMessage h1{
+    font-size: 31px;
+  }
+  .titlePageInt{
+    margin-bottom:20px;
     font-size: 31px;
   }
   .contMessage h4 {
